@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch | Sustainable Time Tracking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <a href="#" class="logo"><span>Stopwatch</span></a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Stopwatch Section -->
+    <section class="stopwatch-section">
+        <div class="container">
+            <div class="stopwatch-container">
+                <div class="time-display">
+                    <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>.<span id="milliseconds">00</span>
+                </div>
+                <div class="time-labels">
+                    <span>HRS</span>
+                    <span>MIN</span>
+                    <span>SEC</span>
+                    <span>MS</span>
+                </div>
+                
+                <div class="controls">
+                    <button id="startPauseBtn" class="btn eco-btn start">
+                        <i class="fas fa-play"></i> Start
+                    </button>
+                    <button id="lapBtn" class="btn eco-btn lap" disabled>
+                        <i class="fas fa-leaf"></i> Lap
+                    </button>
+                    <button id="resetBtn" class="btn eco-btn reset">
+                        <i class="fas fa-recycle"></i> Reset
+                    </button>
+                </div>
+                
+                <div class="stats">
+                    <div class="stat-card">
+                        <i class="fas fa-clock"></i>
+                        <span id="totalTime">00:00:00.00</span>
+                        <p>Total Time</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-bolt"></i>
+                        <span id="fastestLap">--:--.--</span>
+                        <p>Fastest Lap</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-tree"></i>
+                        <span id="lapsCount">0</span>
+                        <p>Laps Recorded</p>
+                    </div>
+                </div>
+                
+                <div class="laps-container">
+                    <h3><i class="fas fa-list-ol"></i> Lap Times</h3>
+                    <div id="lapsList" class="laps-list">
+                        <div class="no-laps">Record your first lap to begin</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
